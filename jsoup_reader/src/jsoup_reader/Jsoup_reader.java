@@ -23,7 +23,7 @@ public class Jsoup_reader {
     public static void main(String[] args) throws IOException {
         Document doc = Jsoup.connect("https://stackoverflow.com/questions/tagged/spring").get();
         Elements e = doc.select("div.al");
-        System.out.println("Total questions for the topic Spring (til now) is "+e.text());
+        System.out.println("Total questions for the topic Spring (till now) is "+e.text());
         
     }
     
